@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background-color: hsla(0, 100%, 74%);
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main
+{
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    justify-content: flex-end;
+    align-items: center;
+    border: 2px solid;
+}
+
+section
+{
+    padding: 3.5em;
+    background-color: blueviolet;
+    border-radius: 3px;
+}
+
+section:last-child
+{
+    background-color: green;
+}
