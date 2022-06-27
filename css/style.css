@@ -6,7 +6,7 @@
 :root{
     --blue-color :
     --dark-blue-color : hsl(249, 10%, 26%);
-    --red-color : hsla(0, 100%, 74%);
+    /* --red-color : hsla(0, 100%, 74%); */
     --white-color : white;
     --green-color : hsl(154, 59%, 51%);
     --gray-color : gray;
@@ -80,16 +80,16 @@ input
 }
 
 input:focus{
-    border: 1px solid gray;
+    border: 1px solid val(--black-color);
 }
 
- input[type="email"]:valid{
+ /* input[type="email"]:valid{
     border: 1px solid green;
  }
 
  input[type="email"]:invalid{
     border: 1px solid red;
- }
+ } */
 
 input:nth-last-child(6n-4){
     background-color: var(--green-color);
