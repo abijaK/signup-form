@@ -5,8 +5,8 @@
 /* Color description */
 :root{
     --blue-color :
-    --dark-blue-color : hsl(249, 10%, 26%);
-    /* --red-color : hsla(0, 100%, 74%); */
+    --dark blue-color : hsl(249, 10%, 26%);
+    --red-color : hsla(0, 100%, 74%);
     --white-color : white;
     --green-color : hsl(154, 59%, 51%);
     --gray-color : gray;
@@ -61,7 +61,7 @@ form
     justify-content: space-between;
     gap: .9em;
     background-color: var(--white-color);
-    /* color: --black-color ; */
+    color: var(--black-color);
     border-radius: 10px;
     align-items: center;
     padding: 30px 0px;
@@ -71,33 +71,41 @@ form:first-child(1){
     margin-top: 30px;
 }
 
-input
+div input
 {
     padding: .9em;
     border-radius: 3px;
     border: 1px solid gray;
-    width: 80%;
+    width: 100%;
 }
 
-input:focus{
+div input:focus{
     border: 1px solid val(--black-color);
 }
 
- input[type="email"]:valid{
+ div input[type="email"]:valid{
     border: 1px solid green;
  }
 
- input[type="email"]:invalid{
+ div input[type="email"]:invalid{
     border: 1px solid red;
  }
 
-input:nth-last-child(6n-4){
+/* input:nth-last-child(6n-4){
     background-color: var(--green-color);
     color: var(--white-color);
-    /* border: ; */
+} */
+div input[type="submit"]{
+    background-color: var(--green-color);
+    color: var(--white-color);
 }
 
 small{
     color: var(--gray-color);
     font-size: 1ch;
+}
+
+small a{
+    text-decoration: none;
+    color: var(--red-color);
 }
