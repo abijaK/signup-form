@@ -28,7 +28,16 @@ const isBetween = (length, min, max) => length<min || length>max ? false : true;
 
 // develop functions that show the error
 const showError = (input, message) => {
-    const error = document.querySelector('small');
+    // const formField = document.querySelector('input');
+
+    const formField = input.parentElement // select the div element
+    
+    // add the error class
+    formField.classList.add("error")
+
+    // const error = document.querySelector('small');
+
+    const error = formField.querySelector('small'); //we use element querySelector instead of document, to allow focus on the needed element 
     error.textContent = message;
 }
 
