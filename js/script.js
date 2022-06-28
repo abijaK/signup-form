@@ -15,3 +15,7 @@ form.addEventListener("submit", (e) => {
 
 // develop utility functions
 const isRequired = value => value === "" ? false : true;
+const isBetween = (length, min, max) => length<min || length>max ? false : true;
+
+// develop functions that show the error
+const showError = (input, message) => 

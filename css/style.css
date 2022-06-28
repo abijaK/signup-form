@@ -71,7 +71,7 @@ form:first-child(1){
     margin-top: 30px;
 }
 
-div input
+input
 {
     padding: .9em;
     border-radius: 3px;
@@ -79,15 +79,15 @@ div input
     width: 100%;
 }
 
-div input:focus{
+input:focus{
     border: 1px solid val(--black-color);
 }
 
- div input[type="email"]:valid{
+input[type="email"]:valid{
     border: 1px solid green;
  }
 
- div input[type="email"]:invalid{
+input[type="email"]:invalid{
     border: 1px solid red;
  }
 
@@ -95,7 +95,7 @@ div input:focus{
     background-color: var(--green-color);
     color: var(--white-color);
 } */
-div input[type="submit"]{
+input[type="submit"]{
     background-color: var(--green-color);
     color: var(--white-color);
 }
